@@ -35,6 +35,10 @@
     width: 200px;
     float: left;
     height: 70px;
+    text-align: right;
+    line-height: 70px;
+    position: relative;
+
 
 }
 ul{
@@ -42,6 +46,7 @@ ul{
     display: flex;
     justify-content:center;
     align-items: center;
+
 
 }
 ul li{
@@ -54,35 +59,16 @@ ul li{
 ul li a{
     text-decoration: none;
     color: black;
-font-family:Arial ;
-font-weight: bold;
-transition: 0.5s ease-in-out;
+  font-family:Arial ;
+  font-weight: bold;
+  transition: 0.5s ease-in-out;
 
 }
 ul li a:hover{
     color: white;
 
 }
-.srch{
-    font-family: 'Times new Roman' ;
-    background: transparent;
-    border: 1px solid orangered;
-    color: aliceblue;
-    float: left;
-    border-bottom-left-radius: 5px;
-    border-bottom-left-radius:5px ;
-    padding: 20px;
-    border-right: 0cm;
-    margin-top: 20px;
 
-}
-.search{
-    
-
-    float: right;
-    margin-left: 100px;
-    top: 100px;
-}
 .btn{
     width: 100px;
     height: 40px;
@@ -98,9 +84,7 @@ ul li a:hover{
 .btn:focus{
     outline: none;
 }
-.srch:focus{
-    outline: none;
-}
+
 .content{
    width: 120px;
    height: auto;
@@ -122,29 +106,164 @@ ul li a:hover{
     margin-top: 9%;
     letter-spacing: 2px;
 } 
-.content .cn{
-    width: 160px;
-    height: 40px;
-    background: orangered;
-    border: none;
-    margin-bottom: 10px;
-    margin-left: 20px;
-    font-size: 18px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: .4s ease;
-}
-.content .cn a{
+.cn{
+    background-color: brown;
+    margin-top: 10px;
+    padding: 10px 10px;
+    color: #fff;
+    border-radius: 100px;
+    font-weight: 100px;
+    display: inline-block;
     text-decoration: none;
-    color: black;
-    transition: 0.3s ease;
-
-}
-.cn:hover{
-    background-color: white;
-
 }
 .content span{
     color: orangered;
     font-size: 60px;
 }
+
+
+
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="text"], input[type="password"] {
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+button {
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+.content a{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background: #017143;
+    color: #fff;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+
+
+
+
+/* Reset some default styles */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  /* Header styles */
+  header {
+    background-color: #199b74;
+    color: #efcaca;
+    padding: 1rem;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    color: #981818;
+    text-decoration: none;
+  }
+  
+  .nav-links {
+    list-style: none;
+  }
+  
+  .nav-links li {
+    display: inline;
+    margin-left: 1rem;
+  }
+  
+  .nav-links li a {
+    color: #af2929;
+    text-decoration: none;
+  }
+  
+  /* Hero section styles */
+  .hero {
+    background-image: url('abc.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .hero-content {
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .cta-btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #16c02a;
+    color: #631e1e;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+  }
+  
+  /* Main content section styles */
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Footer styles */
+  footer {
+    background-color: #d84d4d;
+    color: #3db445;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  /* Media query for responsive design */
+  @media screen and (max-width: 768px) {
+    .nav-links li {
+      display: block;
+      margin: 1rem 0;
+    }
+  }
+  
